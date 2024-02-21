@@ -1,18 +1,19 @@
 .contactList{
     padding: 0;
-    width: 410px;
+    width: 500px;
     display: flex;
     flex-direction: column;
+    justify-content: left;
 }
 .contactListItem{
     display: flex;
     justify-content: center;
     font-weight: 600;
-    width: 100%;
+    width: 410px;
     height: 35px;
 }
 .contactListItem__name{
-    width: 150px;
+    width: 200px;
     text-align: right;
 }
 .contactListItem__phone{
