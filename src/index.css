@@ -29,21 +29,6 @@ h4{
   margin: 10px auto;
 }
 
-.App ul{
-  padding: 0;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-}
-
-.App ul li{
-  display: flex;
-  justify-content: right;
-  font-weight: 600;
-}
-
-ul button{
-  margin: 0 0 10px 20px;
-  background-color: rgba(255, 0, 0, 0.767);
-  font-weight: 600;
+input::placeholder {
+  padding-left: 5px;
 }

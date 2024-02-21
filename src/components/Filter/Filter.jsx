@@ -1,14 +1,11 @@
 import React from 'react';
-import { nanoid } from '@reduxjs/toolkit';
 import { useSelector, useDispatch } from 'react-redux';
-import { getFilter } from 'components/redux/selectors';
+import { selectFilter } from 'components/redux/selectors';
 import { changeFilter } from 'components/redux/filterSlice';
-
-const filterInputId = nanoid();
 
 const Filter = () => {
   
-  const value = useSelector(getFilter);
+  const value = useSelector(selectFilter);
   const dispatch = useDispatch();
 
   const onChange = event => {
@@ -19,7 +16,7 @@ const Filter = () => {
     return (
       <div>
         <h4>Find contacts by name</h4>
-        <input onChange={onChange} value={value} id={filterInputId} placeholder='Contact name'/>
+        <input onChange={onChange} value={value} placeholder='Contact name'/>
       </div>
     );
   }
